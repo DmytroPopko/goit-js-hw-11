@@ -40,6 +40,7 @@ function findImagesFromApi() {
 
     if (totalHits !== 0 && coutImg > totalHits) {
       engOfSearch();
+      return;
     } else if (totalHits !== 0 && coutImg <= totalHits) {
       resultOfSearch(totalHits);
     }

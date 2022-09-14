@@ -25,7 +25,6 @@ export default class ImgApiService {
     try {
       const response = await axios(options);
       this.incrementPage();
-      console.log(this);
       return response.data;
     } catch (error) {
       console.error(error);
